@@ -1,0 +1,22 @@
+{
+  "name": "json-generator-for-ec-cms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "bin": {
+    "main": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "fs": "0.0.1-security",
+    "yargs": "^16.2.0"
+  }
+}
