@@ -17,11 +17,15 @@ const options = yargs
     alias: 'base',
     describe:'Base path to be prefixed to the file name and root dir name'
 })
+.option("t",{
+    alias: 'target',
+    describe:'Target file name'
+})
 .argv
 
 const toScan = options.d?options.d:process.cwd();
 const toWrite = options.t?options.t:process.cwd();
-const base = '/';
+const base = options.b?options.b:'/';
 
 walk(toScan,(err,data,sections)=>{
     if(err) return console.log(chalk.red(err.toString()))
