@@ -9,7 +9,9 @@ const options = yargs
 .option("d", {
     alias:'directory',
     describe:'Root directory where files are',
-    type: "string"
+    type: "string",
+    demandOption:true,
+    
 })
 .option("b",{
     alias: 'base',
