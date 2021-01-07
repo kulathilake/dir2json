@@ -1,5 +1,6 @@
-Usage -d <directory to scan> -b <base url to prefix to link> -t <target file
-name>
+Usage 
+```node . -d <directory to scan> -b <base url to prefix to link> -t <target file
+name>```
 
 Options:
       --help       Show help                                           [boolean]
