@@ -5,7 +5,7 @@ const yargs = require('yargs');
 const chalk = require('chalk');
 
 const options = yargs
-.usage("Usage -n <name>")
+.usage("Usage -d <directory to scan> -b <base url to prefix to link> -t <target file name>")
 .option("d", {
     alias:'directory',
     describe:'Root directory where files are',
@@ -84,7 +84,7 @@ function walk (dir,done){
                     
                     data.push({
                         parent,
-                        link:base + '/' + parent + '/' + filename,
+                        link:base + '/' + parent + '/' + filename + '.pdf',
                         title:filename,
                         linkText:'',
                         thumbnail:'',
